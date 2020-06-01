@@ -3,8 +3,8 @@
         console.log('ViewModel initiated...');
         //---Variáveis locais
         var self = this;
-        var baseUri = ''
-        self.displayName = 'Pokemón Species List';
+        var baseUri = 'Produtos.txt'
+        self.displayName = 'Produtos Agrícolas';
         self.error = ko.observable('');
         self.pagesize = 20;
         self.passingMessage = ko.observable('');
@@ -48,27 +48,11 @@
             if (id)
                 self.currentPage(id);
             console.log('CALL: getSpecies...');
-            var composedUri = baseUri + "?page=" + self.currentPage() + "&pageSize=" + self.pagesize;
-            ajaxHelper(composedUri, 'GET').done(function (data) {
-                self.records(data.Species);
-                self.totalRecords(data.Total);
-            });
-        };
+            $.getJSON("Produtos.txt", function (data) { self.records(data.Produtos); self.totalRecords(data.Total); });
+
+            };
+
         //--- Internal functions
-        function ajaxHelper(uri, method, data) {
-            self.error(''); // Clear error message
-            return $.ajax({
-                type: method,
-                url: uri,
-                dataType: 'json',
-                contentType: 'application/json',
-                data: data ? JSON.stringify(data) : null,
-                error: function (jqXHR, textStatus, errorThrown) {
-                    console.log("AJAX Call[" + uri + "] Fail...");
-                    self.error(errorThrown);
-                }
-            });
-        }
     };
 
     return vm;

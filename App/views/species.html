@@ -4,9 +4,6 @@
     </div>
     <div class="row">
         <div class="col-sm-2">Filter by:</div>
-        <a class="btn btn-outline-secondary text-white" style="background:#b3b3b3" href="#filter/Colors">color</a>
-        <a class="btn btn-outline-secondary text-white" style="background:#b3b3b3" href="#filter/Habitats">habitat</a>
-        <a class="btn btn-outline-secondary text-white" style="background:#b3b3b3" href="#filter/Generations">generation</a>
     </div>
     <!-- ko if:records().length > 0 -->
     <div class="row small">
@@ -39,8 +36,8 @@
     <!-- /ko -->
     <div data-bind="foreach:records" class="">
         <span class="d-inline-block img-thumbnail text-center" style="background:lightgrey">
-            <img class="m-2" data-bind="attr : { src : 'http://ieeta-cloudpt.web.ua.pt/itw/pokemons/Imagens/' + Id + '.png', style : 'width: 228px;height:200px;', title: Name}" onerror="this.src = '/images/pokemon-icon.png'; this.style.width = '228px';" />
-            <a class="btn btn-outline-secondary d-block" data-bind="text:Name.charAt(0).toUpperCase() + Name.slice(1), attr:{ href: '#specieDetails/' + Id}" style="font-size:11px;width:257px;"></a>
+            <img class="m-2" data-bind="attr : { src : Imagem , style : 'width: 228px;height:200px;', title: Nome}" onerror="this.src = '/images/pokemon-icon.png'; this.style.width = '228px';" />
+            <a class="btn btn-outline-secondary d-block" data-bind="text:Nome, attr:{ href: '#specieDetails/' + Nome}" style="font-size:11px;width:257px;"></a>
         </span>
     </div>
 </section>

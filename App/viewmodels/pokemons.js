@@ -2,7 +2,7 @@
     var vm = function () {
         var self = this;
         var baseUri = '';
-        self.displayName = 'Pokemón List';
+        self.displayName = 'Cabazes';
         self.description = '';
         self.error = ko.observable('');
         self.pagesize = 20;

@@ -4,7 +4,6 @@
     </div>
     <div class="row">
         <div class="col-sm-2">Filter by:</div>
-        <a class="btn btn-outline-secondary text-white" data-bind="style:"style="background:#b3b3b3" href="#filtertype">type</a>
     </div>
     <!-- ko if:records().length > 0 -->
     <div class="row small">
@@ -38,7 +37,7 @@
     <div class="clearfix"></div>
     <div data-bind="foreach:records" class="">
         <span class="d-inline-block img-thumbnail text-center" style="background:lightgrey">
-            <img class="m-2" data-bind="attr : { src : 'http://ieeta-cloudpt.web.ua.pt/itw/pokemons/Imagens/' + Id + '.png', style : 'width: 228px; height:200px', title: Name}" onerror="this.src = '/images/pokemon-icon.png'; this.style.width = '228px';" />
+            <img class="m-2" data-bind="attr : { src : '', style : 'width: 228px; height:200px', title: Name}" onerror="this.src = '/images/pokemon-icon.png'; this.style.width = '228px';" />
             <a class="btn btn-outline-secondary d-block" data-bind="text:Name.charAt(0).toUpperCase() + Name.slice(1).replace('-', ' '), attr:{ href: '#pokemonDetails/' + Id}" style="font-size:11px;width:257px"></a>
             <span data-bind="foreach: Types">
                 <span class="img-thumbnail px-3 py-1 text-white border-secondary" data-bind="style : { 'background-color': Color }, text: Name.toUpperCase()" style="font-size:11px"></span>
