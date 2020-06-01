@@ -3,7 +3,7 @@ define(['durandal/app'], function (app) {
         console.log('SinglePokemonPage initiated...');
         var self = this;
         var baseUrl = '';
-        self.displayName = 'Search Pokemon by name';
+        self.displayName = 'Vendedores';
         self.pokemons = ko.observableArray([]);
         console.log(self.pokemons)
         self.error = ko.observable('');
