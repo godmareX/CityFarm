@@ -1,0 +1,19 @@
+<section>
+    <div class="border-bottom pt-4 pb-2 mb-3">
+        <h2 data-bind="text:displayName"></h2>
+    </div>
+    <form>
+        <div class="form-group btn-group-sm">
+            <input class="form-control mr-sm-1" type="search" placeholder="Search" aria-label="Search" data-bind="textInput: searchPokemon, event:{onkeydown: getPokemon}">
+        </div>
+    </form>
+    <div data-bind="foreach:pokemons" class="">
+        <span class="d-inline-block img-thumbnail text-center" style="background:lightgrey">
+            <img class="m-2" data-bind="attr : { src : 'http://ieeta-cloudpt.web.ua.pt/itw/pokemons/Imagens/' + Id + '.png', style : 'width: 228px;height:200px;', title: Name}" onerror="this.src = '/images/pokemon-icon.png'; this.style.width = '228px';" />
+            <a class="btn btn-outline-secondary d-block" data-bind="text:Name.charAt(0).toUpperCase() + Name.slice(1), attr:{ href: '#pokemonDetails/' + Id}" style="font-size:11px;width:257px"></a>
+            <span data-bind="foreach: Types">
+                <span class="img-thumbnail px-3 py-1 text-white border-secondary" data-bind="style : { 'background-color': Color }, text: Name.toUpperCase()" style="font-size:11px"></span>
+            </span>
+        </span>
+    </div>
+</section>

@@ -1,0 +1,15 @@
+﻿<section>
+    <div class="border-bottom pt-4 pb-2 mb-3">
+        <h2 data-bind="text:displayName"></h2>
+    </div>
+    <div data-bind="foreach:records">
+        <div data-bind="foreach:data">
+            <div class="col-sm-12">
+                <a class=" btn btn-outline-secondary" data-bind="visible:$parent.name!='Generations',text:Key.charAt(0).toUpperCase() + Key.slice(1), attr:{href:'#filterby/' + $parent.name + '/'+ Key}"></a>
+            </div>
+            <div class="col-sm-12">
+                <a class=" btn btn-outline-secondary" data-bind="visible:$parent.name=='Generations',text:Key.charAt(0).toUpperCase() + Key.slice(1).replace('-',' '), attr:{href:'#filterby/' + $parent.name + '/'+ Key}"></a>
+            </div>
+        </div>
+    </div>
+</section>
