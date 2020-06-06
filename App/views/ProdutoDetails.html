@@ -1,0 +1,27 @@
+﻿<section>
+    <div class="border-bottom pt-4 pb-2 mb-3">
+        <h2 data-bind="text:displayName"></h2>
+    </div>
+    <div class="col-sm-12 row" data-bind="with:record">
+        <div class="col-sm-3"><img data-bind="attr: {src:Imagem,style : 'width: 400px;height:320px;'}" /></div>
+        <div class="col-sm-9">
+            <span class="block" data-bind="if:Vegetal==1">Vegetal</span>
+            <span class="block" data-bind="if:Fruta==1">Fruta</span>
+            <span class="block" data-bind="text:'Epoca: '+Epoca"></span>
+        </div>
+    </div>
+    <div data-bind="with:record" class="">
+        <div data-bind="foreach:Vendedores">
+            <span class="d-inline-block img-thumbnail text-center" style="background:lightgrey">
+                <img class="m-2" data-bind="attr : { src : Imagem , style : 'width: 228px;height:200px;', title: Nome}" onerror="this.src = ''; this.style.width = '228px';" />
+                <span class="px-1 py-1 block" data-bind="text: Nome" style="font-size:11px"></span>
+                <span class="block">
+                    <span class="px-1 py-1" data-bind="text:'Stock: ' + Stock+'kg'" style="font-size:11px"></span>
+                    <span class="px-1 py-1" data-bind="text:'Preço: ' + Preco+'€'" style="font-size:11px"></span>
+                    <span class="px-1 py-1" data-bind="text:'Rating: ' + Rating+'/5'" style="font-size:11px"></span>
+                </span>
+                <a class="btn btn-outline-secondary d-block" data-bind="click: $root.adicionarCarrinho" style="font-size:11px;width:257px;">Adicionar Ao Carrinho</a>
+            </span>
+        </div>
+    </div>
+</section>

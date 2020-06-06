@@ -19,7 +19,7 @@ define(['durandal/system', 'durandal/app', 'durandal/viewLocator', 'bootstrap'],
     system.debug(true);
     //>>excludeEnd("build");
 
-    app.title = 'Pokémon ITW Application';
+    app.title = 'Vegetables Society';
 
     app.configurePlugins({
         router: true,
