@@ -86,28 +86,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\main.js" />
-    <Content Include="App\viewmodels\filtertype.js" />
-    <Content Include="App\viewmodels\filterbytype.js" />
-    <Content Include="App\viewmodels\filter.js" />
-    <Content Include="App\viewmodels\filterby.js" />
-    <Content Include="App\viewmodels\pokemonByName.js" />
-    <Content Include="App\viewmodels\pokemonDetails.js" />
-    <Content Include="App\viewmodels\pokemons.js" />
+    <Content Include="App\viewmodels\Vendedores.js" />
+    <Content Include="App\viewmodels\CabazDetails.js" />
+    <Content Include="App\viewmodels\Cabazes.js" />
     <Content Include="App\viewmodels\shell.js" />
-    <Content Include="App\viewmodels\specieDetails.js" />
-    <Content Include="App\viewmodels\species.js" />
+    <Content Include="App\viewmodels\ProdutoDetails.js" />
+    <Content Include="App\viewmodels\Produto.js" />
     <Content Include="App\viewmodels\welcome.js" />
-    <Content Include="App\views\detail.html" />
-    <Content Include="App\views\filtertype.html" />
-    <Content Include="App\views\filterbytype.html" />
-    <Content Include="App\views\filter.html" />
-    <Content Include="App\views\filterby.html" />
-    <Content Include="App\views\pokemonByName.html" />
-    <Content Include="App\views\pokemonDetails.html" />
-    <Content Include="App\views\pokemons.html" />
+    <Content Include="App\views\Vendedores.html" />
+    <Content Include="App\views\CabazDetails.html" />
+    <Content Include="App\views\Cabazes.html" />
     <Content Include="App\views\shell.html" />
-    <Content Include="App\views\specieDetails.html" />
-    <Content Include="App\views\species.html" />
+    <Content Include="App\views\ProdutoDetails.html" />
+    <Content Include="App\views\Produto.html" />
     <Content Include="App\views\welcome.html" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -125,6 +116,7 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="index.html" />
     <Content Include="images\pokemon-icon.png" />
+    <Content Include="Produtos.txt" />
     <Content Include="readme.md" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="Scripts\almond-custom.js" />

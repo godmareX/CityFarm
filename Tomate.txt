@@ -1,0 +1,1 @@
+{"Imagem":"https://i.imgur.com/xg7H7oB.png","Vegetal":0,"Fruta":1,"Epoca":"Abril a Julho","Vendedores":[{"Nome":"Quinta do Zé","Rating":1,"Preco":1.25,"Stock": 25,"Imagem":""}]}
