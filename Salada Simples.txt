@@ -1,0 +1,1 @@
+{"Conteudo":"1 alface  2 cenouras  1 beterraba  1 tomate  1 cebola","Imagem":"https://img.itdg.com.br/tdg/images/recipes/000/000/233/43653/43653_original.jpg?mode=crop&width=710&height=600","Vendedores":[{"Nome":"Quinta do Vale","Rating":1,"Preco":1.50,"Stock": 10,"Imagem":"https://sites.google.com/site/quintavaledacorlda/_/rsrc/1468867826059/home/260.jpg"}]}

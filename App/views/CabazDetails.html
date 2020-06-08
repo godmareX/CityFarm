@@ -1,74 +1,25 @@
 ﻿<section>
-    <div class="container">
-        <div class="border-bottom pt-4 pb-2 mb-3">
-            <h2 data-bind="text:displayName"></h2>
-        </div>
-        <div class="col-sm-12 row" style="margin-right:0px">
-            <div data-bind="with:record, style:{background:BackgroundColor}" class="col-sm-12 text-white" style="border-radius: 25px 25px 0px 0px;padding: 5px;height: 50px;border:1px solid black;vertical-align:top;text-align:center"><span data-bind="text:Name.charAt(0).toUpperCase() + Name.slice(1)" style="width:100%; font-size:30px"></span></div>
-            <div data-bind="with:record" class="col-sm-12" style="background:#b3b3b3;border:1px solid black; vertical-align:middle; text-align:center; padding:5px;margin: 0px 0px 0px 0px"><a data-bind="attr:{href:'#specieDetails/' + $root.Specie()}"><img data-bind="attr:{src:''}" style="height:270px;width:270px; margin:5px" /></a></div>
-        </div>
-        <div class="col-sm-12 row">
-            <div class="col-sm-4 text-white" data-bind="style:{background:BackgroundColor}" style="padding:6px;border: 1px solid black;">Id</div>
-            <div class="col-sm-4 text-white" data-bind="style:{background:BackgroundColor}" style="padding:6px;border: 1px solid black;">Base Experience</div>
-            <div class="col-sm-4 text-white" data-bind="style:{background:BackgroundColor}" style="padding:6px;border: 1px solid black;">Height</div>
-        </div>
-        <div data-bind="with:record" class="col-sm-12 row">
-            <div class="col-sm-4" style="background:#b3b3b3;padding:6px; border: 1px solid black;" data-bind="text:Id"></div>
-            <div class="col-sm-4" style="background:#b3b3b3;padding:6px; border: 1px solid black;" data-bind="text:BaseExperience"></div>
-            <div class="col-sm-4" style="background:#b3b3b3;padding:6px; border: 1px solid black;" data-bind="text:Height.toString().length > 1 ? Height.toString().slice(0, -1) +'.'+Height.toString().charAt(Height.length-1)+ ' m' : '0' +'.'+Height.toString().charAt(Height.length-1)+ ' m'"></div>
-        </div>
-        <div class="col-sm-12 row">
-            <div class="col-sm-4 text-white" data-bind="style:{background:BackgroundColor}" style="padding:6px;border: 1px solid black;">Starter</div>
-            <div class="col-sm-4 text-white" data-bind="style:{background:BackgroundColor}" style="padding:6px;border: 1px solid black;">Mass</div>
-            <div class="col-sm-4 text-white" data-bind="style:{background:BackgroundColor}" style="padding:6px;border: 1px solid black;">Order</div>
-        </div>
-        <div data-bind="with:record" class="col-sm-12 row">
-            <div class="col-sm-4" style="background:#b3b3b3;padding:6px; border: 1px solid black;" data-bind="text:IsStarter ? 'yes' : 'no'"></div>
-            <div class="col-sm-4" style="background:#b3b3b3;padding:6px; border: 1px solid black;" data-bind="text:Mass.toString().length > 1 ? Mass.toString().slice(0, -1) +'.'+Mass.toString().charAt(Mass.length-1)+ ' kg' :  '0'  +'.'+Mass.toString().charAt(Mass.length-1)+ ' kg'"></div>
-            <div class="col-sm-4" style="background:#b3b3b3;padding:6px; border: 1px solid black;" data-bind="text:Order"></div>
-        </div>
-        <div data-bind="with:record" class="col-sm-12 row">
-            <div class="col-sm-6 text-white" data-bind="style:{background:$parent.BackgroundColor}" style="padding:6px;border: 1px solid black">Types</div>
-            <div class="col-sm-6" data-bind="foreach:Pokemon_TypeMaps" style="background:#b3b3b3;padding:6px; border: 1px solid black;">
-                <span class="img-thumbnail px-3 py-1 text-white border-secondary" data-bind="style : { 'background-color': Color }, text: Name.toUpperCase()" style="font-size:11px"></span>
-            </div>
-        </div>
-
-        <div data-bind="with:record" class="row" style="margin-left:0px;margin-right:0px">
-            <div data-bind="foreach:Pokemon_Stats" class="col-sm-12 row">
-                <div class="col-sm-3 text-white" style="padding:6px;border: 1px solid black;" data-bind="text:Name, style:{background:$root.BackgroundColor}"></div>
-                <div class="col-sm-2 text-white" data-bind="style:{background:$root.BackgroundColor}" style="padding:6px;border: 1px solid black;">Base Value</div>
-                <div class="col-sm-3" style="padding:6px;background: #b3b3b3; border: 1px solid black;" data-bind="text:BaseValue"></div>
-                <div class="col-sm-2 text-white" data-bind="style:{background:$root.BackgroundColor}" style="padding:6px;border: 1px solid black;">EVs</div>
-                <div class="col-sm-2" style="padding:6px;background: #b3b3b3; border: 1px solid black;" data-bind="text:Effort"></div>
-            </div>
+    <div class="border-bottom pt-4 pb-2 mb-3">
+        <h2 data-bind="text:displayName"></h2>
+    </div>
+    <div class="col-sm-12 row" data-bind="with:record">
+        <div class="col-sm-3"><img data-bind="attr: {src:Imagem,style : 'width: 350px;height:300px;'}" /></div>
+        <div class="col-sm-9">
+            <span class="block" data-bind="text:'Conteudo: ' + Conteudo"></span>
         </div>
     </div>
-    <div data-bind="with:record" class="col-sm-12 row" style="margin-left:0px">
-        <div class="col-sm-3 text-white" data-bind="style:{background:$parent.BackgroundColor}" style="border: 1px solid black;border-radius:0px 0px 0px 25px">
-            <select class="text-white" data-bind="options:Moves, optionsText:function(item){return item.Name.replace('-', ' ')},selectedOptions:$parent.MovetoShow, style:{background:$parent.BackgroundColor}"></select>
-        </div>
-        <div data-bind="foreach:$parent.MovetoShow" class="col-sm-9 row">
-            <div class="col-sm-3 text-white" data-bind="style:{background:$root.BackgroundColor}" style="padding:6px;border: 1px solid black;">Accuracy</div>
-            <div class="col-sm-3 text-white" data-bind="style:{background:$root.BackgroundColor}" style="padding:6px;border: 1px solid black;">Effect Chance</div>
-            <div class="col-sm-3 text-white" data-bind="style:{background:$root.BackgroundColor}" style="padding:6px;border: 1px solid black;">PP</div>
-            <div class="col-sm-3 text-white" data-bind="style:{background:$root.BackgroundColor}" style="padding:6px;border: 1px solid black;">Power</div>
-            <div class="col-sm-3" style="padding:6px;background: #b3b3b3; border: 1px solid black;" data-bind="text:accuracy"></div>
-            <div class="col-sm-3" style="padding:6px;background: #b3b3b3; border: 1px solid black;" data-bind="text:effect_chance"></div>
-            <div class="col-sm-3" style="padding:6px;background: #b3b3b3; border: 1px solid black;" data-bind="text:pp"></div>
-            <div class="col-sm-3" style="padding:6px;background: #b3b3b3; border: 1px solid black; border-radius:0px 0px 25px 0px" data-bind="text:power"></div>
+    <div data-bind="with:record" class="">
+        <div data-bind="foreach:Vendedores">
+            <span class="d-inline-block img-thumbnail text-center" style="background:lightgrey">
+                <img class="m-2" data-bind="attr : { src : Imagem , style : 'width: 228px;height:200px;', title: Nome}" onerror="this.src = ''; this.style.width = '228px';" />
+                <span class="px-1 py-1 block" data-bind="text: Nome" style="font-size:11px"></span>
+                <span class="block">
+                    <span class="px-1 py-1" data-bind="text:'Stock: ' + Stock" style="font-size:11px"></span>
+                    <span class="px-1 py-1" data-bind="text:'Preço: ' + Preco+'€'" style="font-size:11px"></span>
+                    <span class="px-1 py-1" data-bind="text:'Rating: ' + Rating+'/5'" style="font-size:11px"></span>
+                </span>
+                <a class="btn btn-dark d-block" data-bind="click: $root.adicionarCarrinho" style="font-size:11px;width:257px;">Adicionar Ao Carrinho</a>
+            </span>
         </div>
     </div>
-    <div style="height:10px"></div>
-    <div data-bind="with:record" class="row col-sm-12">
-        <a class="btn btn-outline-secondary" data-bind="visible:Id==1, attr:{href:'#pokemonDetails/10157'}"><i class=" fa fa-arrow-circle-o-left"></i> Previous Pokemon</a>
-        <a class="btn btn-outline-secondary" data-bind="visible:Id==10001, attr:{href:'#pokemonDetails/807'}"><i class=" fa fa-arrow-circle-o-left"></i> Previous Pokemon</a>
-        <a class="btn btn-outline-secondary" data-bind="visible:Id!=1&&Id!=10001, attr:{href:'#pokemonDetails/' + (Id-1)}"><i class=" fa fa-arrow-circle-o-left"></i> Previous Pokemon</a>
-        <a class="btn btn-outline-secondary" href="#pokemons"><i class=" fa fa-arrow-circle-o-down"></i> Back to Pokemóns List</a>
-        <a class="btn btn-outline-secondary" data-bind="visible:Id!=807&&Id!=10157, attr:{href:'#pokemonDetails/' + (Id+1)}"><i class=" fa fa-arrow-circle-o-right"></i> Next Pokemon</a>
-        <a class="btn btn-outline-secondary" data-bind="visible:Id==807, attr:{href:'#pokemonDetails/10001'}"><i class=" fa fa-arrow-circle-o-right"></i> Next Pokemon</a>
-        <a class="btn btn-outline-secondary" data-bind="visible:Id==10157, attr:{href:'#pokemonDetails/1'}"><i class=" fa fa-arrow-circle-o-right"></i> Next Pokemon</a>
-    </div>
-    <div style="height:10px"></div>
-
 </section>

@@ -1,0 +1,42 @@
+﻿<section>
+    <div class="border-bottom pt-4 pb-2 mb-3">
+        <h2 data-bind="text:displayName"></h2>
+    </div>
+    <div class="container row col-sm-12" data-bind="foreach:records">
+        <div class="col-sm-2"><img data-bind="attr:{'src':Imagem,'width':'200px'}" /></div>
+        <div class="col-sm-2" style="display:flex"><span data-bind="text:Nome" style="margin:auto"></span></div>
+        <div class="col-sm-2" style="display:flex"><span data-bind="text:Vendedor" style="margin:auto"></span></div>
+        <div class="col-sm-2" style="display:flex">
+            <div style="margin:auto">
+                <span class="block" data-bind="text:'Rating: ' + Rating + '/5'" style="margin:auto"></span>
+                <span class="block" data-bind="visible:Tipo=='Produto',text:'Preço: ' + Preco + '€/kg'" style="margin:auto"></span>
+                <span class="block" data-bind="visible:Tipo=='Cabaz',text:'Preço: ' + Preco + '€/unidade'" style="margin:auto"></span>
+                <span class="block" data-bind="visible:Tipo=='Produto',text:'Stock: ' + Stock + 'kg'" style="margin:auto"></span>
+                <span class="block" data-bind="visible:Tipo=='Cabaz',text:'Stock: ' + Stock + ' unidades'" style="margin:auto"></span>
+            </div></div>
+        <div class="col-sm-2" data-bind="visible:Tipo=='Produto'" style="display:flex">
+            <div style="margin:auto">
+                <a class="btn btn-outline-secondary" data-bind="visible:Quantidade()>1,click:$root.decresce1" style="font-size:11px;width:50px;margin:1px">-1</a>
+                <a class="btn btn-outline-secondary" data-bind="visible:Quantidade()>0.25,click:$root.decresce25" style="font-size:11px;width:50px;margin:1px">-0.25</a>
+                <span data-bind="text:Quantidade() + ' kg'" style="margin:2px 2px 2px 2px"></span>
+                <a class="btn btn-outline-secondary" data-bind="visible:Quantidade()<(Stock-0.23),click:$root.incrementa25" style="font-size:11px;width:50px;margin:1px">+0.25</a>
+                <a class="btn btn-outline-secondary" data-bind="visible:Quantidade()<(Stock-0.77),click:$root.incrementa1" style="font-size:11px;width:50px;margin:1px">+1</a>
+            </div></div>
+            <div class="col-sm-2" data-bind="visible:Tipo=='Cabaz'" style="display:flex">
+                <div style="margin:auto">
+                    <a class="btn btn-outline-secondary" data-bind="visible:Quantidade()>1,click:$root.decresce1" style="font-size:11px;width:50px;margin:1px">-1</a>
+                    <span data-bind="text:Quantidade()==1 ? Quantidade() + ' unidade':Quantidade() + ' unidades'" style="margin:5px 5px 5px 5px"></span>
+                    <a class="btn btn-outline-secondary" data-bind="visible:Quantidade()<(Stock-0.77),click:$root.incrementa1" style="font-size:11px;width:50px;margin:1px">+1</a>
+                </div>
+            </div>
+                <div class="col-sm-2" style="display:flex"><span data-bind="text:(Quantidade()*Preco)+'€'" style="margin:auto"></span></div>
+            </div>
+    <div class="container row col-sm-12">
+        <div class="col-sm-2">
+            <a class="btn btn-dark d-block" data-bind="click: Encomenda" href="#pagamento" style="font-size:20px;width:257px;margin:15px"><i class=" fa fa-truck"></i>  Encomendar</a>
+        </div>
+        <div class="col-sm-8"></div>
+        <div class="col-sm-2" style="display:flex"><span data-bind="text:'Preço Total: ' + PrecoTotal() + '€'" style="margin:auto"></span></div>
+    </div>
+    
+</section>

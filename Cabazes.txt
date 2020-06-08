@@ -1,0 +1,1 @@
+{"CurrentPage":1,"PageSize":20,"Pages":1,"Total":1,"Cabazes":[{"Nome": "Salada Simples", "Imagem": "https://img.itdg.com.br/tdg/images/recipes/000/000/233/43653/43653_original.jpg?mode=crop&width=710&height=600"},{"Nome":"Salada de Fruta","Imagem":"https://img.cybercook.com.br/receitas/944/salada-de-frutas-3.jpeg"}]}

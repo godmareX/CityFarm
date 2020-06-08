@@ -37,7 +37,7 @@
     <div data-bind="foreach:records" class="">
         <span class="d-inline-block img-thumbnail text-center" style="background:lightgrey">
             <img class="m-2" data-bind="attr : { src : Imagem , style : 'width: 228px;height:200px;', title: Nome}" onerror="this.src = '/images/pokemon-icon.png'; this.style.width = '228px';" />
-            <a class="btn btn-outline-secondary d-block" data-bind="text:Nome, attr:{ href: '#ProdutoDetails/' + Nome}" style="font-size:11px;width:257px;"></a>
+            <a class="btn btn-dark d-block" data-bind="text:Nome, attr:{ href: '#ProdutoDetails/' + Nome}" style="font-size:11px;width:257px;"></a>
         </span>
     </div>
 </section>

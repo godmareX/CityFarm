@@ -1,9 +1,9 @@
 ﻿define(['durandal/app'], function (app) {
     var vm = function () {
+        console.log('ViewModel initiated...');
+        //---Variáveis locais
         var self = this;
-        var baseUri = '';
         self.displayName = 'Cabazes';
-        self.description = '';
         self.error = ko.observable('');
         self.pagesize = 20;
         self.passingMessage = ko.observable('');
@@ -46,28 +46,13 @@
             // Activation code here
             if (id)
                 self.currentPage(id);
-            console.log('CALL: getSpecies...');
-            var composedUri = baseUri + "?page=" + self.currentPage() + "&pageSize=" + self.pagesize;
-            ajaxHelper(composedUri, 'GET').done(function (data) {
-                self.records(data.Pokemons);
-                self.totalRecords(data.Total);
-            });
+            console.log('CALL: getCabazes...');
+            $.getJSON("Cabazes.txt", function (data) { self.records(data.Cabazes); self.totalRecords(data.Total); });
+
         };
+
         //--- Internal functions
-        function ajaxHelper(uri, method, data) {
-            self.error(''); // Clear error message
-            return $.ajax({
-                type: method,
-                url: uri,
-                dataType: 'json',
-                contentType: 'application/json',
-                data: data ? JSON.stringify(data) : null,
-                error: function (jqXHR, textStatus, errorThrown) {
-                    console.log("AJAX Call[" + uri + "] Fail...");
-                    self.error(errorThrown);
-                }
-            });
-        };
     };
+
     return vm;
 });

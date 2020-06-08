@@ -23,7 +23,7 @@
             }
         });
         self.adicionarCarrinho = function (item) {
-            var tempparaAdicionar = JSON.stringify({ Tipo: 'Cabaz', Nome: self.displayName, Vendedor: item.Nome, Rating: item.Rating, Preco: item.Preco, Stock: item.Stock, Imagem: self.record().Imagem, Quantidade: 1, Id: self.cookies() });
+            var tempparaAdicionar = JSON.stringify({ Tipo: item.Tipo, Nome: item.Nome, Vendedor: self.displayName, Rating: self.record().Rating, Preco: item.Preco, Stock: item.Stock, Imagem: item.Imagem, Quantidade:1, Id:self.cookies() });
             document.cookie = "vendedor" + self.cookies() + "=" + tempparaAdicionar;
             document.cookie = "index=" + (self.cookies() + 1);
             self.cookies(self.cookies() + 1)
@@ -32,7 +32,7 @@
         };
         self.activate = function (id) {
             // Activation code here
-            console.log('CALL: getCabazes...');
+            console.log('CALL: getVendedores...');
             var composedUri = id + ".txt";
             self.displayName = id
             console.log("composedUri = " + composedUri);

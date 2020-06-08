@@ -3,7 +3,6 @@
         console.log('ViewModel initiated...');
         //---Variáveis locais
         var self = this;
-        var baseUri = 'Produtos.txt'
         self.displayName = 'Produtos Agrícolas';
         self.error = ko.observable('');
         self.pagesize = 20;
@@ -47,7 +46,7 @@
             // Activation code here
             if (id)
                 self.currentPage(id);
-            console.log('CALL: getSpecies...');
+            console.log('CALL: getProdutos...');
             $.getJSON("Produtos.txt", function (data) { self.records(data.Produtos); self.totalRecords(data.Total); });
 
             };
