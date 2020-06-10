@@ -1,0 +1,1166 @@
+{
+  "id": "fe4b6e05-aeff-4a6c-9203-d787ca76033b",
+  "version": "2.0",
+  "name": "CityFarm",
+  "url": "https://godmarex.github.io/CityFarm/",
+  "tests": [{
+    "id": "9666bd0e-d5e1-4cd2-b1a4-3495117f64af",
+    "name": "visualizar produtos",
+    "commands": [{
+      "id": "fe883e71-e170-4ac2-bb97-16e62157506f",
+      "comment": "",
+      "command": "open",
+      "target": "https://godmarex.github.io/CityFarm/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "00622ff4-f944-48a3-965d-a472a6086e84",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3dee09bc-b81f-4d97-a8a1-0e4418a7ce5d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Produtos Agricolas",
+      "targets": [
+        ["linkText=Produtos Agricolas", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Produtos Agricolas')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNav']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#Produto')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Produtos Agricolas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2227233-63ce-4d34-977d-68a58a85b0de",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.d-inline-block:nth-child(1) > .m-2",
+      "targets": [
+        ["css=.d-inline-block:nth-child(1) > .m-2", "css:finder"],
+        ["xpath=//img[@title='Tomate']", "xpath:img"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[4]/span/img", "xpath:idRelative"],
+        ["xpath=//span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31297ab4-3799-40c4-a761-216c08dbeb21",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.d-inline-block:nth-child(2)",
+      "targets": [
+        ["css=.d-inline-block:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[4]/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Cenoura')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3fbfd102-567d-4915-93ef-b4c901e579d4",
+    "name": "Visualizar cabazes",
+    "commands": [{
+      "id": "b7e4bf68-35e0-460c-9f4f-8023215ee026",
+      "comment": "",
+      "command": "open",
+      "target": "https://godmarex.github.io/CityFarm/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c27d466c-20fb-4e3d-810b-d67ca90fc234",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29b20536-9eee-4e17-8cc5-9ab720bb78dd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cabazes",
+      "targets": [
+        ["linkText=Cabazes", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Cabazes')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNav']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#cabazes')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cabazes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6ddcc6d-5a97-4c9a-876b-a7f9d3ac7fae",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.d-inline-block:nth-child(1)",
+      "targets": [
+        ["css=.d-inline-block:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[4]/span", "xpath:idRelative"],
+        ["xpath=//div[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Salada Simples')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d22dd01-ac08-4be7-9a1a-bbff5931db4a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.d-inline-block:nth-child(2)",
+      "targets": [
+        ["css=.d-inline-block:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[4]/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Salada de Fruta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "aa5f39bb-26a4-4206-bbb5-62f22b16a6f4",
+    "name": "Visualizar vendedores",
+    "commands": [{
+      "id": "c4191297-6c1c-4898-ac87-0c8349421a33",
+      "comment": "",
+      "command": "open",
+      "target": "https://godmarex.github.io/CityFarm/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1838060f-fad2-4609-9f0b-30ef3a71472d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6a7163e-5e59-46d7-8eaf-48e32196be78",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Vendedores",
+      "targets": [
+        ["linkText=Vendedores", "linkText"],
+        ["css=.nav-item:nth-child(7) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Vendedores')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNav']/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#vendedores')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Vendedores')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "83467d78-af99-4c41-81c8-63027cbf98fc",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.d-inline-block:nth-child(1)",
+      "targets": [
+        ["css=.d-inline-block:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[4]/span", "xpath:idRelative"],
+        ["xpath=//div[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Quinta do Vale')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "199e91d6-b0d6-49bd-a71e-5202fbdbde50",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.d-inline-block:nth-child(3)",
+      "targets": [
+        ["css=.d-inline-block:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[4]/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"],
+        ["xpath=//span[contains(.,'Quinta da Aveleda')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "73e9d00c-1064-4fd3-be68-b42bf646594f",
+    "name": "Adicionar produtos ao carrinho",
+    "commands": [{
+      "id": "8273614f-0210-4fe3-8674-762ca48e65dc",
+      "comment": "",
+      "command": "open",
+      "target": "https://godmarex.github.io/CityFarm/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15ab0647-39ba-4cbd-bab1-b7c6fabb7df5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21cb0979-5590-46dc-af58-813497940e90",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Produtos Agricolas",
+      "targets": [
+        ["linkText=Produtos Agricolas", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Produtos Agricolas')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNav']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#Produto')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Produtos Agricolas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb9331a5-0f47-4ec1-a468-185630c13ede",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Laranja",
+      "targets": [
+        ["linkText=Laranja", "linkText"],
+        ["css=.d-inline-block:nth-child(5) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Laranja')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[4]/span[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#ProdutoDetails/Laranja')]", "xpath:href"],
+        ["xpath=//span[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Laranja')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd4072c2-f737-4614-bfb6-d376467230f4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.d-inline-block:nth-child(2)",
+      "targets": [
+        ["css=.d-inline-block:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[3]/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2afbe65f-d8e5-4218-9beb-b5c0d86432b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.d-inline-block:nth-child(2) > .btn",
+      "targets": [
+        ["css=.d-inline-block:nth-child(2) > .btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Adicionar Ao Carrinho')])[2]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[3]/div/span[2]/a", "xpath:idRelative"],
+        ["xpath=//span[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4beaa93a-ea7f-4565-b7b6-d898caab8a85",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ok')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c28a631-afb4-48f5-bc85-7168f43ea45a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Carrinho",
+      "targets": [
+        ["linkText=Carrinho", "linkText"],
+        ["css=.nav-item:nth-child(9) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Carrinho')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNav']/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#carrinho')]", "xpath:href"],
+        ["xpath=//li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c791702-aa18-4d58-a847-665382353018",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container:nth-child(2) > .col-sm-2:nth-child(3)",
+      "targets": [
+        ["css=.container:nth-child(2) > .col-sm-2:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54981eba-b729-4cc1-a4e5-b8815a930136",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.container:nth-child(2) > .col-sm-2:nth-child(3)",
+      "targets": [
+        ["css=.container:nth-child(2) > .col-sm-2:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6befbe33-ce5b-47a1-bb42-81516f875eb1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Remover do Carrinho",
+      "targets": [
+        ["linkText=Remover do Carrinho", "linkText"],
+        ["css=.text-white", "css:finder"],
+        ["xpath=//a[contains(text(),'Remover do Carrinho')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Remover do Carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5d241e4c-eaeb-43c5-8f7a-59d8463a0001",
+    "name": "Adicionar cabazes ao carrinho",
+    "commands": [{
+      "id": "29482859-b140-4ba3-b014-72350931c896",
+      "comment": "",
+      "command": "open",
+      "target": "https://godmarex.github.io/CityFarm/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94c38bd4-44b3-482d-a21d-dd290e07ac4a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c3a754f-b2ea-44d8-94b8-50e3b3cdeb32",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cabazes",
+      "targets": [
+        ["linkText=Cabazes", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Cabazes')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNav']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#cabazes')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cabazes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "869e212c-ea78-42b4-9ded-eace7b6410fb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Caldo Verde",
+      "targets": [
+        ["linkText=Caldo Verde", "linkText"],
+        ["css=.d-inline-block:nth-child(3) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Caldo Verde')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[4]/span[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#CabazDetails/Caldo Verde')]", "xpath:href"],
+        ["xpath=//span[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Caldo Verde')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fcafdcb-31c8-48c7-9dd7-e401e9006c25",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.d-inline-block",
+      "targets": [
+        ["css=.d-inline-block", "css:finder"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[3]/div/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "914d8e9b-f8e2-418c-8845-d0affc389fd5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Adicionar Ao Carrinho",
+      "targets": [
+        ["linkText=Adicionar Ao Carrinho", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar Ao Carrinho')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[3]/div/span/a", "xpath:idRelative"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Adicionar Ao Carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "13b8938e-589a-486d-a04d-edc0961cd7cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ok')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "713695d7-d900-4df2-8ff1-b5907afabc9e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Carrinho",
+      "targets": [
+        ["linkText=Carrinho", "linkText"],
+        ["css=.nav-item:nth-child(9) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Carrinho')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNav']/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#carrinho')]", "xpath:href"],
+        ["xpath=//li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2ee0486-08ef-428a-bc6d-498de3dbea0a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.container:nth-child(2) > .col-sm-2:nth-child(3)",
+      "targets": [
+        ["css=.container:nth-child(2) > .col-sm-2:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc6f59fe-3de1-4b5f-80a2-e1f394fdf284",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Remover do Carrinho",
+      "targets": [
+        ["linkText=Remover do Carrinho", "linkText"],
+        ["css=.text-white", "css:finder"],
+        ["xpath=//a[contains(text(),'Remover do Carrinho')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Remover do Carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "706481eb-32d6-455f-8e0d-7bd319e1c5dd",
+    "name": "Adicionar produtos de um vendedor ao carrinho",
+    "commands": [{
+      "id": "8b21c23d-7a25-430f-85d1-6b40a0f91482",
+      "comment": "",
+      "command": "open",
+      "target": "https://godmarex.github.io/CityFarm/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20822ffe-32de-4f82-a644-c063086fab26",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c5368b0-a547-4d15-b1bb-fda268fd6d5a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Vendedores",
+      "targets": [
+        ["linkText=Vendedores", "linkText"],
+        ["css=.nav-item:nth-child(7) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Vendedores')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNav']/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#vendedores')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Vendedores')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "334df00a-73e3-49a5-8768-851714f74fc4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Quinta á moda Antiga",
+      "targets": [
+        ["linkText=Quinta á moda Antiga", "linkText"],
+        ["css=.d-inline-block:nth-child(2) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Quinta á moda Antiga')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[4]/span[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#VendedorDetails/Quinta á moda Antiga')]", "xpath:href"],
+        ["xpath=//span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Quinta á moda Antiga')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e50e5ea-f610-4b8a-985c-8c154299e0e8",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.d-inline-block:nth-child(1) > .px-1",
+      "targets": [
+        ["css=.d-inline-block:nth-child(1) > .px-1", "css:finder"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[3]/div/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fe9f65c-9479-4a3f-a0f1-1ec2e2b3193a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Adicionar Ao Carrinho",
+      "targets": [
+        ["linkText=Adicionar Ao Carrinho", "linkText"],
+        ["css=.d-inline-block:nth-child(1) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar Ao Carrinho')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[3]/div/span/a", "xpath:idRelative"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Adicionar Ao Carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "375ed7af-6e42-486a-8982-35693131f85d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ok')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da0d752d-74bd-4cb3-81b4-6a6051226f9b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Carrinho",
+      "targets": [
+        ["linkText=Carrinho", "linkText"],
+        ["css=.nav-item:nth-child(9) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Carrinho')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNav']/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#carrinho')]", "xpath:href"],
+        ["xpath=//li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "be99fbe2-f9b7-4992-9830-0e5be5ffceb1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.container:nth-child(2) > .col-sm-2:nth-child(3)",
+      "targets": [
+        ["css=.container:nth-child(2) > .col-sm-2:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4738d384-18af-42e8-96b2-41deaa50dc4c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Remover do Carrinho",
+      "targets": [
+        ["linkText=Remover do Carrinho", "linkText"],
+        ["css=.text-white", "css:finder"],
+        ["xpath=//a[contains(text(),'Remover do Carrinho')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Remover do Carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ef7f539d-0bdd-4e84-a887-99066f59307d",
+    "name": "Encomenda",
+    "commands": [{
+      "id": "73cf850e-bed0-4830-a783-54b3e1301086",
+      "comment": "",
+      "command": "open",
+      "target": "https://godmarex.github.io/CityFarm/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88b905cf-8b22-45e5-865b-821b11201f7f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "557fde96-9c34-40d9-8f89-d252b555ce85",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Produtos Agricolas",
+      "targets": [
+        ["linkText=Produtos Agricolas", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Produtos Agricolas')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNav']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#Produto')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Produtos Agricolas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b02682ea-08ac-443a-a4a2-c59728018d7e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tomate",
+      "targets": [
+        ["linkText=Tomate", "linkText"],
+        ["css=.d-inline-block:nth-child(1) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Tomate')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[4]/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#ProdutoDetails/Tomate')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Tomate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fcb54f7-69c4-4a3c-9cce-343eebb03450",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Adicionar Ao Carrinho",
+      "targets": [
+        ["linkText=Adicionar Ao Carrinho", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar Ao Carrinho')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[3]/div/span/a", "xpath:idRelative"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Adicionar Ao Carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca131ecc-178d-4dc8-bb82-d7a4dce3d261",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ok')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a559ffc-dfa1-437a-af38-97065158b313",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Produtos Agricolas",
+      "targets": [
+        ["linkText=Produtos Agricolas", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Produtos Agricolas')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNav']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#Produto')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Produtos Agricolas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "117d0528-b07c-4235-9758-7ff9fce9ec9e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Laranja",
+      "targets": [
+        ["linkText=Laranja", "linkText"],
+        ["css=.d-inline-block:nth-child(5) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Laranja')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[4]/span[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#ProdutoDetails/Laranja')]", "xpath:href"],
+        ["xpath=//span[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Laranja')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4e7a5da-4b53-49d5-849d-67e7df16f09a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.d-inline-block:nth-child(2) > .btn",
+      "targets": [
+        ["css=.d-inline-block:nth-child(2) > .btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Adicionar Ao Carrinho')])[2]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[3]/div/span[2]/a", "xpath:idRelative"],
+        ["xpath=//span[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a4dab70-9062-40ab-9923-a64bfde712c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ok')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c26a573f-09b3-433e-ae97-0b55d83e66c6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Carrinho",
+      "targets": [
+        ["linkText=Carrinho", "linkText"],
+        ["css=.nav-item:nth-child(9) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Carrinho')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNav']/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#carrinho')]", "xpath:href"],
+        ["xpath=//li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ac684b0-d276-4387-9066-b7d1a58bc15a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.container:nth-child(2) > div:nth-child(2)",
+      "targets": [
+        ["css=.container:nth-child(2) > div:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "172bb963-cfc5-4024-9d19-3f838e60616e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=div:nth-child(9)",
+      "targets": [
+        ["css=div:nth-child(9)", "css:finder"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[9]", "xpath:idRelative"],
+        ["xpath=//div[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a336919-4996-4117-9780-c35da0a8b9f6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Encomendar",
+      "targets": [
+        ["linkText=Encomendar", "linkText"],
+        ["css=.btn-dark:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Encomendar')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#pagamento')]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Encomendar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4423d552-0964-4f26-a83e-8ca2cec8d853",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Carrinho",
+      "targets": [
+        ["linkText=Carrinho", "linkText"],
+        ["css=.nav-item:nth-child(9) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Carrinho')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNav']/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#carrinho')]", "xpath:href"],
+        ["xpath=//li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "00f1982c-0b57-4a1e-8872-6c6d4fa0d4f7",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.container:nth-child(2) > .col-sm-2:nth-child(3)",
+      "targets": [
+        ["css=.container:nth-child(2) > .col-sm-2:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5228885-1918-41c4-a36a-0a920d74158e",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=div:nth-child(9)",
+      "targets": [
+        ["css=div:nth-child(9)", "css:finder"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[9]", "xpath:idRelative"],
+        ["xpath=//div[9]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "89efe089-8096-462d-8bac-4b48503e168f",
+    "name": "Remover produtos do carrinho",
+    "commands": [{
+      "id": "1a4d83e0-47de-461d-a4fe-8d5a741bec6f",
+      "comment": "",
+      "command": "open",
+      "target": "https://godmarex.github.io/CityFarm/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "435012af-900f-4b49-86a1-f520450e23f4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29637a80-2da9-42b8-93e4-04e6dd67d44e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cabazes",
+      "targets": [
+        ["linkText=Cabazes", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Cabazes')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNav']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#cabazes')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cabazes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab6fab99-3fed-4d46-9739-b31a3df77461",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Salada Simples",
+      "targets": [
+        ["linkText=Salada Simples", "linkText"],
+        ["css=.d-inline-block:nth-child(1) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Salada Simples')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[4]/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#CabazDetails/Salada Simples')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Salada Simples')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "684e5957-f0f6-426c-81b6-c006318eae3e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Adicionar Ao Carrinho",
+      "targets": [
+        ["linkText=Adicionar Ao Carrinho", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar Ao Carrinho')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[3]/div/span/a", "xpath:idRelative"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Adicionar Ao Carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d62e56aa-99d6-496f-87c2-bba72b0ec539",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ok')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e88e5d0-8273-4cbe-b064-95882d48858e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Produtos Agricolas",
+      "targets": [
+        ["linkText=Produtos Agricolas", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Produtos Agricolas')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNav']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#Produto')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Produtos Agricolas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b40675d1-091d-4055-9102-efba5df352c7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cenoura",
+      "targets": [
+        ["linkText=Cenoura", "linkText"],
+        ["css=.d-inline-block:nth-child(2) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Cenoura')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[4]/span[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#ProdutoDetails/Cenoura')]", "xpath:href"],
+        ["xpath=//span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cenoura')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72b107b7-3fd2-4585-9aaa-d4aff8f8ed6d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.d-inline-block:nth-child(2) > .btn",
+      "targets": [
+        ["css=.d-inline-block:nth-child(2) > .btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Adicionar Ao Carrinho')])[2]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[3]/div/span[2]/a", "xpath:idRelative"],
+        ["xpath=//span[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a4197d7-c862-4f83-8e89-e7905670c732",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ok')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "655ef095-fbca-45d0-8063-c7619dc17ee4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Carrinho",
+      "targets": [
+        ["linkText=Carrinho", "linkText"],
+        ["css=.nav-item:nth-child(9) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Carrinho')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNav']/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#carrinho')]", "xpath:href"],
+        ["xpath=//li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5adccf34-9c7d-4cb0-a90e-763b1bba9035",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.container:nth-child(2) > .col-sm-2:nth-child(3) > span",
+      "targets": [
+        ["css=.container:nth-child(2) > .col-sm-2:nth-child(3) > span", "css:finder"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[3]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Quinta do Vale')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4c29800-dc5f-4279-8625-4f8da299c6cf",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-sm-2:nth-child(10) > span",
+      "targets": [
+        ["css=.col-sm-2:nth-child(10) > span", "css:finder"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[10]/span", "xpath:idRelative"],
+        ["xpath=//div[10]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Quinta á moda Antiga')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d6d1ba8-888e-4664-aec0-876ca4670b09",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Remover do Carrinho",
+      "targets": [
+        ["linkText=Remover do Carrinho", "linkText"],
+        ["css=div:nth-child(2) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Remover do Carrinho')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Remover do Carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bdd0c251-26b2-4a50-ba61-7758a444ae03",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.container:nth-child(2) > .col-sm-2:nth-child(3) > span",
+      "targets": [
+        ["css=.container:nth-child(2) > .col-sm-2:nth-child(3) > span", "css:finder"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[3]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Quinta á moda Antiga')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "15c4517f-3268-4ddd-b490-96b6d2074037",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.col-sm-2:nth-child(10) > span",
+      "targets": [
+        ["css=.col-sm-2:nth-child(10) > span", "css:finder"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[10]/span", "xpath:idRelative"],
+        ["xpath=//div[10]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61c1f906-4c70-40ed-ba1c-5b8c0a186213",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Remover do Carrinho",
+      "targets": [
+        ["linkText=Remover do Carrinho", "linkText"],
+        ["css=.text-white", "css:finder"],
+        ["xpath=//a[contains(text(),'Remover do Carrinho')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Remover do Carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f0046cd0-f27f-47d5-b225-20d53be9d3a5",
+    "name": "Alterar quantidades",
+    "commands": [{
+      "id": "f56b5da0-841a-42bd-8b77-7850fcd9407e",
+      "comment": "",
+      "command": "open",
+      "target": "https://godmarex.github.io/CityFarm/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "337d3ad8-80fb-4212-8e28-f7bad9ae23bc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f15a6a67-5d27-47e3-aae7-3ec599d9e584",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Produtos Agricolas",
+      "targets": [
+        ["linkText=Produtos Agricolas", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Produtos Agricolas')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNav']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#Produto')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Produtos Agricolas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "db498131-214b-4173-bac3-dadd054d28e8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tomate",
+      "targets": [
+        ["linkText=Tomate", "linkText"],
+        ["css=.d-inline-block:nth-child(1) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Tomate')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[4]/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#ProdutoDetails/Tomate')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Tomate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "379612c0-54af-4a60-9c53-6f66928974fb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Adicionar Ao Carrinho",
+      "targets": [
+        ["linkText=Adicionar Ao Carrinho", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar Ao Carrinho')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[3]/div/span/a", "xpath:idRelative"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Adicionar Ao Carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9ea8518-f613-47fe-8ef0-ae0c53b008b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ok')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d823237a-b718-45f8-9d4f-3ea6d8c27a9d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Carrinho",
+      "targets": [
+        ["linkText=Carrinho", "linkText"],
+        ["css=.nav-item:nth-child(9) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Carrinho')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNav']/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#carrinho')]", "xpath:href"],
+        ["xpath=//li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af816d23-b1fd-4806-80f3-391c4ebe9c8a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-2:nth-child(5) span",
+      "targets": [
+        ["css=.col-sm-2:nth-child(5) span", "css:finder"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[5]/div/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'1 kg')]", "xpath:innerText"]
+      ],
+      "value": "1 kg"
+    }, {
+      "id": "0bc7a024-1697-42ab-9c1f-2d12b2021fc1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=+1",
+      "targets": [
+        ["linkText=+1", "linkText"],
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'+1')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[5]/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'+1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21f646c9-991a-4bf4-bc3b-79701e147c1d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-2:nth-child(5) span",
+      "targets": [
+        ["css=.col-sm-2:nth-child(5) span", "css:finder"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[5]/div/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'2 kg')]", "xpath:innerText"]
+      ],
+      "value": "2 kg"
+    }, {
+      "id": "65d668e0-d9c2-4722-aa8e-75693b691848",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=-1",
+      "targets": [
+        ["linkText=-1", "linkText"],
+        ["css=.col-sm-2:nth-child(5) .btn:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'-1')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[5]/div/a", "xpath:idRelative"],
+        ["xpath=//div[5]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'-1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4310c6ca-c1ab-42c1-9902-d89e5061420b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-2:nth-child(5) span",
+      "targets": [
+        ["css=.col-sm-2:nth-child(5) span", "css:finder"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[5]/div/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'1 kg')]", "xpath:innerText"]
+      ],
+      "value": "1 kg"
+    }, {
+      "id": "d1671c1c-1abd-4617-808d-fa6724f41584",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Remover do Carrinho",
+      "targets": [
+        ["linkText=Remover do Carrinho", "linkText"],
+        ["css=.text-white", "css:finder"],
+        ["xpath=//a[contains(text(),'Remover do Carrinho')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Remover do Carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3e3509e6-4e4d-4ec4-8220-0d82a0f9e035",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9666bd0e-d5e1-4cd2-b1a4-3495117f64af"]
+  }],
+  "urls": ["https://godmarex.github.io/", "https://godmarex.github.io/CityFarm/"],
+  "plugins": []
+}
