@@ -1,0 +1,1 @@
+{"Conteudo":"1 abobrinha  1 beringela  2 tomates  1 pimento vermelho","Imagem":"https://www.cooky.com.br/wp-content/uploads/2014/11/Ratatouille.jpg","Vendedores":[{"Nome":"Quinta da Aveleda","Rating":4,"Preco":5,"Stock":6,"Imagem":"https://flores.culturamix.com/blog/wp-content/gallery/pomar/POMAR.jpg"}]}

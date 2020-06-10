@@ -15,10 +15,10 @@
                 <img class="m-2" data-bind="attr : { src : Imagem , style : 'width: 228px;height:200px;', title: Nome}" onerror="this.src = ''; this.style.width = '228px';" />
                 <span class="px-1 py-1 block" data-bind="text: Nome" style="font-size:11px"></span>
                 <span class="block">
-                    <span class="px-1 py-1" data-bind="text:'Stock: ' + Stock+'kg'" style="font-size:11px"></span>
+                    <span class="px-1 py-1" data-bind="text:Tipo=='Produto'?'Stock: ' + Stock+'kg':'Stock: ' + Stock+' unidades'" style="font-size:11px"></span>
                     <span class="px-1 py-1" data-bind="text:'Preço: ' + Preco+'€'" style="font-size:11px"></span>
                 </span>
-                <a class="btn btn-dark d-block" data-bind="click: $root.adicionarCarrinho" style="font-size:11px;width:257px;">Adicionar Ao Carrinho</a>
+                <a class="btn btn-dark d-block text-white" data-bind="click: $root.adicionarCarrinho" style="font-size:11px;width:257px;">Adicionar Ao Carrinho</a>
             </span>
         </div>
     </div>

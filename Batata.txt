@@ -1,0 +1,1 @@
+{"Imagem":"https://img.itdg.com.br/tdg/images/blog/uploads/2017/09/shutterstock_504515311-e1504883066757.jpg?w=1200","Vegetal":1,"Fruta":0,"Epoca":"","Vendedores":[{"Nome":"Quinta á moda Antiga","Rating":3,"Preco":0.5,"Stock":250,"Imagem":"https://aminhaquinta.pt/wp-content/uploads/2014/11/Reportagem-Publico.jpg"}]}

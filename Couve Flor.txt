@@ -1,0 +1,1 @@
+{"Imagem":"https://alimentos.com.br/wp-content/uploads/2018/11/px_couve-flor_1465732.jpg","Vegetal":1,"Fruta":0,"Epoca":"","Vendedores":[{"Nome":"Quinta á moda Antiga","Rating":3,"Preco":2,"Stock":6,"Imagem":"https://aminhaquinta.pt/wp-content/uploads/2014/11/Reportagem-Publico.jpg"}]}

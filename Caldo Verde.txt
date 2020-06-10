@@ -1,0 +1,1 @@
+{"Conteudo":"4 batatas  1 cebola  1 alho  1 couve galega","Imagem":"https://t1.uc.ltmcdn.com/pt/images/6/3/8/img_como_fazer_caldo_verde_7836_orig.jpg","Vendedores":[{"Nome":"Quinta á moda Antiga","Rating":3,"Preco":3.5,"Stock":4,"Imagem":"https://aminhaquinta.pt/wp-content/uploads/2014/11/Reportagem-Publico.jpg"}]}

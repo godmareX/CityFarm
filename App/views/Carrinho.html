@@ -4,8 +4,10 @@
     </div>
     <div class="container row col-sm-12" data-bind="foreach:records">
         <div class="col-sm-2"><img data-bind="attr:{'src':Imagem,'width':'200px'}" /></div>
-        <div class="col-sm-2" style="display:flex"><span data-bind="text:Nome" style="margin:auto"></span></div>
-        <div class="col-sm-2" style="display:flex"><span data-bind="text:Vendedor" style="margin:auto"></span></div>
+        <div style="display:flex;flex-direction:column;align-items:center;justify-content:center">
+                <span class="" data-bind="text:Nome" style="margin:auto;"></span>
+                <a class="btn btn-dark d-block text-white" data-bind="click:$root.remover" style="font-size:20px;width:257px;margin:0px;">Remover do Carrinho</a>
+        </div><div class="col-sm-2" style="display:flex"><span data-bind="text:Vendedor" style="margin:auto"></span></div>
         <div class="col-sm-2" style="display:flex">
             <div style="margin:auto">
                 <span class="block" data-bind="text:'Rating: ' + Rating + '/5'" style="margin:auto"></span>

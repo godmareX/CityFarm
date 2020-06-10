@@ -1,0 +1,1 @@
+{"Imagem":"https://www.infoescola.com/wp-content/uploads/2010/11/ma%C3%A7a-verde_312027470.jpg","Vegetal":0,"Fruta":1,"Epoca":"","Vendedores":[{"Nome":"Quinta da Urtiga","Rating":5,"Preco":1.85,"Stock":23,"Imagem":"https://www.conexaolusofona.org/wp-content/uploads/2019/02/agricultura-biol%C3%B3gica-em-portugal.jpg"}]}

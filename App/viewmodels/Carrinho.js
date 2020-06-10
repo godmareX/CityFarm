@@ -40,6 +40,10 @@
             for (var i = 0; i < self.records().length; i++) { sum = sum + (self.records()[i].Quantidade() * self.records()[i].Preco); }
             return sum;
         });
+        self.remover = function (item) {
+            document.cookie = "vendedor" + item.Id + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+            self.records.remove(item);
+        }
         self.Encomenda = function () {
             var name = "pindex=";
             var ca = document.cookie.split(';');

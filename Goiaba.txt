@@ -1,0 +1,1 @@
+{"Imagem":"https://www.fruta.com.br/wp-content/uploads/2018/06/shutterstock_173770400.jpg","Vegetal":0,"Fruta":1,"Epoca":"","Vendedores":[{"Nome":"Quinta da Aveleda","Rating":4,"Preco":11,"Stock":4,"Imagem":"https://flores.culturamix.com/blog/wp-content/gallery/pomar/POMAR.jpg"}]}
