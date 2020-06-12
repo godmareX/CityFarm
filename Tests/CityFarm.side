@@ -325,7 +325,7 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "7c3a754f-b2ea-44d8-94b8-50e3b3cdeb32",
+      "id": "49217c9a-2096-45b7-ba4b-19f2e481ff7e",
       "comment": "",
       "command": "click",
       "target": "linkText=Cabazes",
@@ -340,18 +340,18 @@
       ],
       "value": ""
     }, {
-      "id": "869e212c-ea78-42b4-9ded-eace7b6410fb",
+      "id": "99c1ee0e-7393-4ba6-a117-55f8991a28dc",
       "comment": "",
       "command": "click",
-      "target": "linkText=Caldo Verde",
+      "target": "linkText=Salada de Fruta",
       "targets": [
-        ["linkText=Caldo Verde", "linkText"],
-        ["css=.d-inline-block:nth-child(3) > .btn", "css:finder"],
-        ["xpath=//a[contains(text(),'Caldo Verde')]", "xpath:link"],
-        ["xpath=//div[@id='applicationHost']/div/div/section/div[4]/span[3]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '#CabazDetails/Caldo Verde')]", "xpath:href"],
-        ["xpath=//span[3]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Caldo Verde')]", "xpath:innerText"]
+        ["linkText=Salada de Fruta", "linkText"],
+        ["css=.d-inline-block:nth-child(2) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Salada de Fruta')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[4]/span[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#CabazDetails/Salada de Fruta')]", "xpath:href"],
+        ["xpath=//span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Salada de Fruta')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
@@ -573,37 +573,37 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "557fde96-9c34-40d9-8f89-d252b555ce85",
+      "id": "e37bef24-92bc-4c60-900c-d3d1814e093d",
       "comment": "",
       "command": "click",
-      "target": "linkText=Produtos Agricolas",
+      "target": "linkText=Cabazes",
       "targets": [
-        ["linkText=Produtos Agricolas", "linkText"],
-        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
-        ["xpath=//a[contains(text(),'Produtos Agricolas')]", "xpath:link"],
-        ["xpath=//div[@id='navbarNav']/ul/li[3]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '#Produto')]", "xpath:href"],
-        ["xpath=//li[3]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Produtos Agricolas')]", "xpath:innerText"]
+        ["linkText=Cabazes", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Cabazes')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNav']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#cabazes')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cabazes')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "b02682ea-08ac-443a-a4a2-c59728018d7e",
+      "id": "6f4940be-e7d9-4d76-a1f2-6c77ac6c6a61",
       "comment": "",
       "command": "click",
-      "target": "linkText=Tomate",
+      "target": "linkText=Salada de Fruta",
       "targets": [
-        ["linkText=Tomate", "linkText"],
-        ["css=.d-inline-block:nth-child(1) > .btn", "css:finder"],
-        ["xpath=//a[contains(text(),'Tomate')]", "xpath:link"],
-        ["xpath=//div[@id='applicationHost']/div/div/section/div[4]/span/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '#ProdutoDetails/Tomate')]", "xpath:href"],
-        ["xpath=//span/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Tomate')]", "xpath:innerText"]
+        ["linkText=Salada de Fruta", "linkText"],
+        ["css=.d-inline-block:nth-child(2) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Salada de Fruta')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[4]/span[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#CabazDetails/Salada de Fruta')]", "xpath:href"],
+        ["xpath=//span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Salada de Fruta')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "0fcb54f7-69c4-4a3c-9cce-343eebb03450",
+      "id": "d30c5bda-73dc-449f-bc8d-cbe2ad6a323e",
       "comment": "",
       "command": "click",
       "target": "linkText=Adicionar Ao Carrinho",
@@ -617,60 +617,7 @@
       ],
       "value": ""
     }, {
-      "id": "ca131ecc-178d-4dc8-bb82-d7a4dce3d261",
-      "comment": "",
-      "command": "click",
-      "target": "css=.btn-default",
-      "targets": [
-        ["css=.btn-default", "css:finder"],
-        ["xpath=//div[3]/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Ok')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "3a559ffc-dfa1-437a-af38-97065158b313",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Produtos Agricolas",
-      "targets": [
-        ["linkText=Produtos Agricolas", "linkText"],
-        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
-        ["xpath=//a[contains(text(),'Produtos Agricolas')]", "xpath:link"],
-        ["xpath=//div[@id='navbarNav']/ul/li[3]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '#Produto')]", "xpath:href"],
-        ["xpath=//li[3]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Produtos Agricolas')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "117d0528-b07c-4235-9758-7ff9fce9ec9e",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Laranja",
-      "targets": [
-        ["linkText=Laranja", "linkText"],
-        ["css=.d-inline-block:nth-child(5) > .btn", "css:finder"],
-        ["xpath=//a[contains(text(),'Laranja')]", "xpath:link"],
-        ["xpath=//div[@id='applicationHost']/div/div/section/div[4]/span[5]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '#ProdutoDetails/Laranja')]", "xpath:href"],
-        ["xpath=//span[5]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Laranja')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "e4e7a5da-4b53-49d5-849d-67e7df16f09a",
-      "comment": "",
-      "command": "click",
-      "target": "css=.d-inline-block:nth-child(2) > .btn",
-      "targets": [
-        ["css=.d-inline-block:nth-child(2) > .btn", "css:finder"],
-        ["xpath=(//a[contains(text(),'Adicionar Ao Carrinho')])[2]", "xpath:link"],
-        ["xpath=//div[@id='applicationHost']/div/div/section/div[3]/div/span[2]/a", "xpath:idRelative"],
-        ["xpath=//span[2]/a", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "6a4dab70-9062-40ab-9923-a64bfde712c9",
+      "id": "dd08a966-7d10-4624-8de2-16fa9ed15b80",
       "comment": "",
       "command": "click",
       "target": "css=.btn-default",
@@ -704,17 +651,6 @@
         ["css=.container:nth-child(2) > div:nth-child(2)", "css:finder"],
         ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[2]", "xpath:idRelative"],
         ["xpath=//div[2]/div[2]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "172bb963-cfc5-4024-9d19-3f838e60616e",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "css=div:nth-child(9)",
-      "targets": [
-        ["css=div:nth-child(9)", "css:finder"],
-        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[9]", "xpath:idRelative"],
-        ["xpath=//div[9]", "xpath:position"]
       ],
       "value": ""
     }, {
@@ -758,17 +694,6 @@
         ["xpath=//div[3]", "xpath:position"]
       ],
       "value": ""
-    }, {
-      "id": "d5228885-1918-41c4-a36a-0a920d74158e",
-      "comment": "",
-      "command": "assertElementNotPresent",
-      "target": "css=div:nth-child(9)",
-      "targets": [
-        ["css=div:nth-child(9)", "css:finder"],
-        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[9]", "xpath:idRelative"],
-        ["xpath=//div[9]", "xpath:position"]
-      ],
-      "value": ""
     }]
   }, {
     "id": "89efe089-8096-462d-8bac-4b48503e168f",
@@ -788,62 +713,7 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "29637a80-2da9-42b8-93e4-04e6dd67d44e",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cabazes",
-      "targets": [
-        ["linkText=Cabazes", "linkText"],
-        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
-        ["xpath=//a[contains(text(),'Cabazes')]", "xpath:link"],
-        ["xpath=//div[@id='navbarNav']/ul/li[5]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '#cabazes')]", "xpath:href"],
-        ["xpath=//li[5]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Cabazes')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "ab6fab99-3fed-4d46-9739-b31a3df77461",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Salada Simples",
-      "targets": [
-        ["linkText=Salada Simples", "linkText"],
-        ["css=.d-inline-block:nth-child(1) > .btn", "css:finder"],
-        ["xpath=//a[contains(text(),'Salada Simples')]", "xpath:link"],
-        ["xpath=//div[@id='applicationHost']/div/div/section/div[4]/span/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '#CabazDetails/Salada Simples')]", "xpath:href"],
-        ["xpath=//span/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Salada Simples')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "684e5957-f0f6-426c-81b6-c006318eae3e",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Adicionar Ao Carrinho",
-      "targets": [
-        ["linkText=Adicionar Ao Carrinho", "linkText"],
-        ["css=.btn", "css:finder"],
-        ["xpath=//a[contains(text(),'Adicionar Ao Carrinho')]", "xpath:link"],
-        ["xpath=//div[@id='applicationHost']/div/div/section/div[3]/div/span/a", "xpath:idRelative"],
-        ["xpath=//span/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Adicionar Ao Carrinho')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "d62e56aa-99d6-496f-87c2-bba72b0ec539",
-      "comment": "",
-      "command": "click",
-      "target": "css=.btn-default",
-      "targets": [
-        ["css=.btn-default", "css:finder"],
-        ["xpath=//div[3]/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Ok')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "1e88e5d0-8273-4cbe-b064-95882d48858e",
+      "id": "706df91f-25ab-475b-8684-47acbe0298e9",
       "comment": "",
       "command": "click",
       "target": "linkText=Produtos Agricolas",
@@ -858,34 +728,36 @@
       ],
       "value": ""
     }, {
-      "id": "b40675d1-091d-4055-9102-efba5df352c7",
+      "id": "eb0dd93f-aefd-4f01-8164-07f64fb70f6e",
       "comment": "",
       "command": "click",
-      "target": "linkText=Cenoura",
+      "target": "linkText=Tomate",
       "targets": [
-        ["linkText=Cenoura", "linkText"],
-        ["css=.d-inline-block:nth-child(2) > .btn", "css:finder"],
-        ["xpath=//a[contains(text(),'Cenoura')]", "xpath:link"],
-        ["xpath=//div[@id='applicationHost']/div/div/section/div[4]/span[2]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '#ProdutoDetails/Cenoura')]", "xpath:href"],
-        ["xpath=//span[2]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Cenoura')]", "xpath:innerText"]
+        ["linkText=Tomate", "linkText"],
+        ["css=.d-inline-block:nth-child(1) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Tomate')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[4]/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#ProdutoDetails/Tomate')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Tomate')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "72b107b7-3fd2-4585-9aaa-d4aff8f8ed6d",
+      "id": "56f79183-647c-4d11-b1f7-e864b8f30b30",
       "comment": "",
       "command": "click",
-      "target": "css=.d-inline-block:nth-child(2) > .btn",
+      "target": "linkText=Adicionar Ao Carrinho",
       "targets": [
-        ["css=.d-inline-block:nth-child(2) > .btn", "css:finder"],
-        ["xpath=(//a[contains(text(),'Adicionar Ao Carrinho')])[2]", "xpath:link"],
-        ["xpath=//div[@id='applicationHost']/div/div/section/div[3]/div/span[2]/a", "xpath:idRelative"],
-        ["xpath=//span[2]/a", "xpath:position"]
+        ["linkText=Adicionar Ao Carrinho", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar Ao Carrinho')]", "xpath:link"],
+        ["xpath=//div[@id='applicationHost']/div/div/section/div[3]/div/span/a", "xpath:idRelative"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Adicionar Ao Carrinho')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "7a4197d7-c862-4f83-8e89-e7905670c732",
+      "id": "b53b3d68-a4fc-4b8f-aa99-096c0f3fcf42",
       "comment": "",
       "command": "click",
       "target": "css=.btn-default",
@@ -923,18 +795,6 @@
       ],
       "value": ""
     }, {
-      "id": "a4c29800-dc5f-4279-8625-4f8da299c6cf",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "css=.col-sm-2:nth-child(10) > span",
-      "targets": [
-        ["css=.col-sm-2:nth-child(10) > span", "css:finder"],
-        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[10]/span", "xpath:idRelative"],
-        ["xpath=//div[10]/span", "xpath:position"],
-        ["xpath=//span[contains(.,'Quinta á moda Antiga')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
       "id": "4d6d1ba8-888e-4664-aec0-876ca4670b09",
       "comment": "",
       "command": "click",
@@ -951,38 +811,13 @@
     }, {
       "id": "bdd0c251-26b2-4a50-ba61-7758a444ae03",
       "comment": "",
-      "command": "assertElementPresent",
+      "command": "assertElementNotPresent",
       "target": "css=.container:nth-child(2) > .col-sm-2:nth-child(3) > span",
       "targets": [
         ["css=.container:nth-child(2) > .col-sm-2:nth-child(3) > span", "css:finder"],
         ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[3]/span", "xpath:idRelative"],
         ["xpath=//div[3]/span", "xpath:position"],
         ["xpath=//span[contains(.,'Quinta á moda Antiga')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "15c4517f-3268-4ddd-b490-96b6d2074037",
-      "comment": "",
-      "command": "assertElementNotPresent",
-      "target": "css=.col-sm-2:nth-child(10) > span",
-      "targets": [
-        ["css=.col-sm-2:nth-child(10) > span", "css:finder"],
-        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[10]/span", "xpath:idRelative"],
-        ["xpath=//div[10]/span", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "61c1f906-4c70-40ed-ba1c-5b8c0a186213",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Remover do Carrinho",
-      "targets": [
-        ["linkText=Remover do Carrinho", "linkText"],
-        ["css=.text-white", "css:finder"],
-        ["xpath=//a[contains(text(),'Remover do Carrinho')]", "xpath:link"],
-        ["xpath=//div[@id='applicationHost']/div/div/section/div[2]/div[2]/a", "xpath:idRelative"],
-        ["xpath=//div[2]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Remover do Carrinho')]", "xpath:innerText"]
       ],
       "value": ""
     }]
