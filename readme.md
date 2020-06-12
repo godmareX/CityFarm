@@ -1,5 +1,5 @@
 # Bem Vindo ao repositório da WebApp CityFarm
-O código criado por nós está em:
+O código criado por nós está em:\n
 -app/viewmodels + app/main.js para o código js criado por nós
 -app/views + index.html para o código html criado por nós
 -Content/myApp.css para o CSS criado por nós
